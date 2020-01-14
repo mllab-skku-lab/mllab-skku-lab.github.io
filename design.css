@@ -1,13 +1,51 @@
-* {box-sizing: border-box;}
-body {
+
+* {
+  padding:0;
+  margin:0;
+}
+
+.transition {
+  position:absolute;
+  z-index: 999;
+  background: linear-gradient(to right, rgb(102,126,234), rgb(118,75,162));
+  margin-left: -30%;
+  height:100%;
+  width:30%;
+  transition:2s all ease-in-out;
+  -webkit-transition:2s all ease-in-out;
+}
+
+
+
+.cta {
+  font-size: 50px;
+  outline:none;
+  border:none;
+  text-decoration:none;
+  text-transform:uppercase;
+  background:inherit;
+  color:#eaeaea;
+  box-sizing:border-box;
+  margin-top:10%;
+  padding:10px 40px;
+  width: 300px;
+  height: 100px;
+}
+
+body, html {
+  background: linear-gradient(to right, rgb(102,126,234), rgb(118,75,162));
+  overflow-x:hidden;
   color: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 0% 0%;
-  background-size: 100% 100%;
+  font-family:'Exo 2';
+  height: 100%;
+  width: 100%;
 }
 .mySlides{display:none;}
 img {vertical-align: middle;}
+
+main {
+  height: 100%;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -15,11 +53,25 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+h1 {
+  font-size: 500%;
+  color: white;
+  margin-left: 5%;
+}
+
 hr {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
 }
 
 .next_button {
@@ -34,42 +86,6 @@ hr {
 }
 
 
-.pagenation {
-    text-align:center;
-    margin-left: -10px;
-    margin-right: 35px;
-
-    }.pagenation  li {
-      display:inline;
-      float: none;
-      vertical-align:middle;
-
-      }.pagenation  li a {
-        display:-moz-inline-stack;  /*FF2*/
-        display:inline-block;
-        vertical-align:top;
-        padding:4px;
-        margin-right:3px;
-        width:15px !important;
-        background-color: white;
-        color:#000;
-        font:bold 12px tahoma;
-        border:1px solid #eee;
-        text-align:center;
-        text-decoration:none;
-        width /**/:26px;    /*IE 5.5*/
-
-        }.pagenation  li a.now {
-          color:#fff;
-          background-color:#f40;
-          border:1px solid #f40;
-
-          }.pagenation  li a:hover, ul li a:focus {
-            color:#fff;
-            border:1px solid #f40;
-            background-color:#f40;
-          }
-
 .map_design {
   width: 100%;
   height: 500px;
@@ -78,55 +94,48 @@ hr {
   margin-left:auto;
 }
 
-#introduce {
-  width: 80%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 80px;
-  margin-left: 15px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  top: 50%;
-  margin-left: 10%;
-  margin-right: 50%;
+.menu {
+  display: inline-block;
+  list-style: none;
 }
 
-#introduce_for_write {
-  width: 80%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+.home {
+  display: flex;
+  opacity: 0;
+  animation: fadeInText 1.5s 0.5s ease-out forwards;
+}
+
+@keyframes fadeInText {
+  100% {
+    opacity: 1;
+  }
 }
 
 /*menubar for ul header*/
 .menubar {
-  font-family: sans-serif;
-  font-size: 170%;
-  font-weight: bold;
-  background-color: white;
+  font-family: 'Exo 2' ;
+  font-size: 250%;
+  background-color: inherit;
   list-style: none;
   text-align: left;
   width: 100%;
   height: 50px;
-  margin-top: -80px;
   left: 0px;
   right: 0px;
   position: fixed;
-  z-index: 999;
   padding: 5px;
-
-  } .menubar li {
+  }
+  .menubar li {
     display: inline-block;
-    padding-right: 15px;
+    list-style: none;
+  }
+    .menubar li ul {
+      display: inline-block;
+      list-style: none;
+      white-space: nowrap;
+      }
 
-    }
+
 
 .hype_list {
   color:white;
@@ -144,28 +153,31 @@ hr {
       outline: 0;
       border: none;
     }
+.searchBox {
+
+}
 
 .hype {
-  color:black;
+  color:white;
   text-decoration: none;
-  background-color: white;
+  background-color: inherit;
   outline: none;
 
   } .hype:visited {
-    color:black;
+    color:white;
     text-decoration: none;
-    background-color: white;
+    background-color: inherit;
     outline: none;
 
     } .hype:hover {
-      color:gray;
+      color: black;
       text-decoration: none;
-      background-color: white;
+      background-color: inherit;
 
       } .hype:active .hype:focus{
-        color: black;
+        color: white;
         text-decoration: none;
-        background-color: white;
+        background-color: inherit;
 
         outline: 0;
         border: none;
@@ -173,24 +185,6 @@ hr {
       }
 
     @media screen and ( max-width: 720px ){
-
-      .menubar {
-
-        font-family: sans-serif;
-        font-size: 170%;
-        font-weight: bold;
-        background-color: white;
-        list-style: none;
-        text-align: left;
-        width: 100%;
-        height: 50px;
-        left: 0px;
-        right: 0px;
-        position: fixed;
-        z-index: 999;
-        padding: 5px;
-
-        }
 
       #introduce {
         margin-left: auto;
@@ -229,39 +223,7 @@ hr {
         margin-left:auto;
       }
 
-      .bar1, .bar2, .bar3 {
-        width: 30px;
-        height: 3px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      .change .bar1 {
-        -webkit-transform: rotate(45deg) translate(-5px, 5px);
-        transform: rotate(-45deg) translate(-5px, 5px) ;
-      }
-      .change .bar2 {opacity: 0;}
-      .change .bar3 {
-        -webkit-transform: rotate(-45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px) ;
-      }
 
-      #container {
-        position: absolute;
-        margin-left: -30px;
-        cursor: pointer;
-      }
-
-      #menu {
-        display: none;
-        background: white;
-        width: 100%;
-          } #menu ul li {
-            background: white;
-            padding-bottom: 5px;
-            width: 100%;
-          }
-    }
 
 .slideshow-container {
   max-width: 1000px;
@@ -309,17 +271,22 @@ hr {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.Box {
+				box-sizing: border-box;
+				width: 200px;
+				height: 200px;
+				margin: 20px auto;
+				background-color: orange;
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.anim-trans {
+  animation: anim 4s ease-in;
+  }
+@keyframes anim{
+     0% { }
+     20%  { z-index:999;\transform: skewX(5deg) translateX(-100%); }
+     40%   { transform: skewX(0deg) translateX(0);
+ width:150%; z-index:999; box-shadow: 10px 10px 5px #eaeaea;}
+     60%   { transform: skewX(3deg) translateX(-10);
+ width:150%;z-index:999; box-shadow: 10px 10px 5px #eaeaea;}
 }
