@@ -225,7 +225,10 @@ li {
       }
 
     @media screen and ( max-width: 720px ){
-
+	img {
+        width: 80%;
+        height: 400px;
+      }
 	.font-size-mobile {
         font-size:10vw;
       }
