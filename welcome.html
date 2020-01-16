@@ -20,31 +20,25 @@
           <ul class="menubar">
             <!---first section of menubar--->
             <li style="margin-left:2%;">
-              <a class="hype" onclick=" myAction();"> ML Lab
+              <a class="hype" data-href="index.html"> ML Lab
               </a>
+            </li>
+            <li style="float:right; margin-right:2%">
+              <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
             </li>
             <!---second section of menubar--->
             <!---menu icon javascript--->
-            <li class="menu" style="float:right; margin-right:2%;">
-              <ul>
-                <li>
-                  <a class="hype" href="people.html"> People </a>
-                </li>
-                <li>
-                  <a class="hype" href="publications.html"> Publications </a>
-                </li>
-                <li>
-                  <a class="hype" href="contact.html"> Contact </a>
-                </li>
-              </ul>
+            <li >
+              <div id="mySidenav" class="sidenav" style="float:right">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="hype" data-href="people.html"> People </a>
+                <a class="hype" data-href="publications.html"> Publications </a>
+                <a class="hype" data-href="contact.html"> Contact </a>
+              </div>
             </li>
-            <!---menu dropdowncontent--->
           </ul>
         </li>
-        <!--- position of number two --->
-        <li>
-
-        </li>
+            <!---menu dropdowncontent--->
         <li>
           <br>
           <br>

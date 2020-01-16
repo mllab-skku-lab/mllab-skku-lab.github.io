@@ -15,6 +15,56 @@
   -webkit-transition:2s all ease-in-out;
 }
 
+.page__content a{
+  text-decoration: none;
+  color: black;
+  font: inherit;
+  font-size: 24px;
+}
+  .page__content a:hover{
+    text-decoration: none;
+    color:white;
+    text-shadow: 4px 4px 4px black;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 .cta {
@@ -101,12 +151,6 @@ li {
   list-style: none;
 }
 
-.home {
-  display: flex;
-  opacity: 0;
-  animation: fadeInText 1.5s 0.5s ease-out forwards;
-}
-
 @keyframes fadeInText {
   100% {
     opacity: 1;
@@ -187,6 +231,8 @@ li {
       }
 
     @media screen and ( max-width: 720px ){
+
+
 
       #introduce {
         margin-left: auto;

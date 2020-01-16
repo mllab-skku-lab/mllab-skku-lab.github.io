@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title> ML Lab SKKU </title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <script type="text/javascript">
+      /* make bar to x*/
+      function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById('menu').style.display =
+        document.getElementById('menu').style.display == 'block' ? 'none' : 'block';
+      }
+
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body>
+    <!---menubar of mllab homepage--->
+    <ul class="menubar">
+      <!---first section of menubar--->
+      <li style="margin-left:10px; margin-top:10px;">
+        <a class="hype" href="index.html"> ML Lab
+        </a>
+      </li>
+      <!---second section of menubar--->
+      <!---menu icon javascript--->
+      <li style="float: right; margin-right:10px; margin-top:5px;">
+        <div id="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </li>
+      <li id="menu" style="float:right; margin-top:10px;">
+        <ul>
+          <li>
+            <a class="hype" href="people.html"> People </a>
+          </li>
+          <li>
+            <a class="hype" href="publications.html"> Publications </a>
+          </li>
+          <li>
+            <a class="hype" href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </li>
+      <!---menu dropdowncontent--->
+    </ul>
+    <div id="introduce">
+      <script>
+      /*slide show of image*/
+
+      var slideIndex = 0;
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        /*if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        */
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+
+
+      window.onload = function() {
+        setInterval(function() {
+          if (slideIndex == 3) {
+            slideIndex = 0;
+          }
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }, 2000);
+      }
+
+      </script>
+      <h1 align="center"> Welcome to ML Lab SKKU </h1>
+      <div class="slideshow-container">
+        <div class="mySlides fade" style="display:block;">
+          <img src="artificial-4082314_1920.jpg" width="100%" height="300px" style="margin-left:auto; margin-right:auto;">
+        </div>
+        <div class="mySlides fade">
+          <img src="laptop-2838917_1920.jpg" width="100%" height="300px" style="margin-left:auto; margin-right:auto;">
+        </div>
+        <div class="mySlides fade">
+          <img src="mindset-3536805_1920.jpg" width="100%" height="300px" style="margin-left:auto; margin-right:auto;">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <h2>
+        <p align="center">
+        “Machine Learning is the domain of Artificial Intelligence
+        that studies how to get software to perform certain cognitive
+        tasks such as classification, prediction and clustering,
+        getting better at it over time without human interaction”
+        </p>
+        <p align="center">
+        Machine Learning Lab (ML Lab) focuses on the research about
+        optimization methods for large-scale machine learning and
+        image processing/computer vision/recommender system methods
+        using deep neural network and machine learning.
+        </p>
+        <p>
+        The Lab is directed by Prof. Joon Hee Choi from 2019.
+        </p>
+      </h2>
+    </div>
+  </body>
+</html>
