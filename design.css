@@ -232,7 +232,15 @@ li {
 	.font-size-mobile {
         font-size:10vw;
       }
-
+	
+	.img-mobile {
+		width:300px;
+		height:300px;
+	    }
+	    
+	.img-start {
+		text-align:center;
+	    }
 
       #introduce {
         margin-left: auto;
