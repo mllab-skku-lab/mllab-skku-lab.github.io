@@ -226,6 +226,9 @@ li {
 
     @media screen and ( max-width: 720px ){
 
+	.font-size-mobile {
+        font-size:10vw;
+      }
 
 
       #introduce {
