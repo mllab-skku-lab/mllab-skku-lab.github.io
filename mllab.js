@@ -132,5 +132,3 @@
           dots[slideIndex-1].className += " active";
         }, 2000);
       }
-
-
