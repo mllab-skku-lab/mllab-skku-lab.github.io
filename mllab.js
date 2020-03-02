@@ -42,8 +42,17 @@
       document.getElementById("mySidenav").style.width = "100%";
   }
 
+  function openNavProfile() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavProfile").style.width = "100%";
+  }
+
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+  }
+
+  function closeNavProfile() {
+    document.getElementById("mySidenavProfile").style.width = "0";
   }
 
     var slideIndex = 0;

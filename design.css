@@ -27,6 +27,39 @@
     text-shadow: 4px 4px 4px black;
   }
 
+  .sidenavP {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenavP a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenavP a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenavP .closebtnP {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -418,4 +451,17 @@ li {
  width:150%; z-index:999; box-shadow: 10px 10px 5px #eaeaea;}
      60%   { transform: skewX(3deg) translateX(-10);
  width:150%;z-index:999; box-shadow: 10px 10px 5px #eaeaea;}
+}
+
+.bg-text {
+    width: 0;
+}
+.bg-text::before {
+    color: #fff;
+    width: 0;
+    position: relative;
+    content: attr(data-bg-text);
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -10%;
 }

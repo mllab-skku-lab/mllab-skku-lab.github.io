@@ -30,7 +30,7 @@
             <!---second section of menubar--->
             <!---menu icon javascript--->
             <li >
-              <div id="mySidenav" class="sidenav" style="z-index:999;">
+              <div id="mySidenav" class="sidenav" style="z-index:4;">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a class="hype" data-href="people.html"> People </a>
                 <a class="hype" data-href="publications.html"> Publications </a>
@@ -207,10 +207,36 @@
       <br>
       <br>
       <br>
-      <b><h2 style="font-size:200%;"> Kwan Hee Kim </h2> </b>
+      <b><h2 style="font-size:300%;"> <span style="cursor:pointer" onclick="openNavProfile()"> Kwan Hee Kim </span> </h2> </b>
+      <div id="mySidenavProfile" class="sidenavP" style="z-index:999;">
+        <a href="javascript:void(0)" class="closebtnP" onclick="closeNavProfile()">&times;</a>
+        <div style="border:10px solid white; opacity:0.8; margin-left:50%; width:3000px; height: 290px; position:absolute; z-index:3;"></div>
+        <div style="font-size: 400%; margin-top: 20%; padding-left:5%; position:absolute; z-index:1;"> Kwan <br>Hee <br>Kim <br> Introduction</div>
+        <div><img src="kani.jpg" style="padding-left:50%; width: 300px; height: 300px; opacity:0.8; z-index:2;"></img></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="margin-top: 10%;padding-left:5%;"> Hello, my name is Kwan Hee Kim, and you can call me Kani. <br> I can speak these languages</h2>
+        <ul style="margin-top: 10%;padding-left:5%;">
+          <li>English : Intermediate-level conversation available</li>
+          <li>Japanese : Business-level conversation available</li>
+          <li>French : Intermediate-level conversation available</li>
+        </ul>
+        <h2 style="margin-top: 10%;padding-left:5%;"> And also I have a big interests in Machine Learning and Generative model. </h2>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
       <br> <h2>BS Student, Department of French Literature & Department of Computer Science</h2>
       <br> <h2>Sungkyunkwan University</h2>
-      <br> <h2><A href="mailto:kkh5428@kakao.com">kkh5428@kakao.com</a></h2>
+      <br>
+      <h2><A href="mailto:kkh5428@kakao.com">kkh5428@kakao.com</a></h2>
       <br>
       <br>
       <h3>
@@ -224,7 +250,7 @@
       <br>
       <br>
     </section>
-    <div style = "position:fixed; left:0; bottom:0; width:100%; text-align:center; background: linear-gradient(to right, rgb(102,126,234), rgb(118,75,162)); z-index:3;">
+    <div style = "position:relative; left:0; bottom:0; width:100%; text-align:center; background: linear-gradient(to right, rgb(102,126,234), rgb(118,75,162)); z-index:-1;">
       <br>
   		<address>
         <p class="copyright">copyright ⓒ 2019 <strong>Machine Learning Laboratory</strong> all rights reserved.</p>
