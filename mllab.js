@@ -55,6 +55,40 @@
     document.getElementById("mySidenavProfile").style.width = "0";
   }
 
+  function openNavProfileMin() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavMin").style.width = "100%";
+  }
+
+  function closeNavProfileMin() {
+    document.getElementById("mySidenavMin").style.width = "0";
+  }
+  function openNavProfileSeok() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavSeok").style.width = "100%";
+  }
+
+  function closeNavProfileSeok() {
+    document.getElementById("mySidenavSeok").style.width = "0";
+  }
+
+  function openNavProfileSeung() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavSeung").style.width = "100%";
+  }
+
+  function closeNavProfileSeung() {
+    document.getElementById("mySidenavSeung").style.width = "0";
+  }
+
+  function openNavProfileJi() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavJi").style.width = "100%";
+  }
+
+  function closeNavProfileJi() {
+    document.getElementById("mySidenavJi").style.width = "0";
+  }
     var slideIndex = 0;
       function currentSlide(n) {
         showSlides(slideIndex = n);
