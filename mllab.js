@@ -81,6 +81,24 @@
     document.getElementById("mySidenavSeung").style.width = "0";
   }
 
+function openNavProfileYe() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavYe").style.width = "100%";
+  }
+
+  function closeNavProfileYe() {
+    document.getElementById("mySidenavYe").style.width = "0";
+  }
+
+function openNavProfileJong() {
+    var width = window.innerWidth;
+    document.getElementById("mySidenavJong").style.width = "100%";
+  }
+
+  function closeNavProfileJong() {
+    document.getElementById("mySidenavJong").style.width = "0";
+  }
+
   function openNavProfileJi() {
     var width = window.innerWidth;
     document.getElementById("mySidenavJi").style.width = "100%";
