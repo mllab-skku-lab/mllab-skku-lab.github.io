@@ -279,7 +279,7 @@ li {
 	img {
         width: 80%;
         height: 60%;
-	    }
+      }
 	.font-size-mobile {
         font-size:10vw;
       }
@@ -383,6 +383,13 @@ li {
   border: 8px;
   width: 100%;
   text-align: center;
+}
+
+.hamburger div{
+  width: 35px;
+height: 5px;
+background-color: white;
+margin: 6px 0;
 }
 
 .numbertext{
