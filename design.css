@@ -281,7 +281,8 @@ li {
         height: 60%;
       }
 	 iframe {
-		 widht : 80%;
+		 width : 80%;
+		 height : 60%;
 	    }
 	.font-size-mobile {
         font-size:10vw;
